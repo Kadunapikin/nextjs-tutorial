@@ -11,8 +11,8 @@ const UsersPage = async () => {
     const users: User[] = await res.json();
   return (
     <>
+    <p className='text-center'>{new Date().toLocaleTimeString()}</p>
     <h1>Users</h1>
-    <p>{new Date().toLocaleTimeString()}</p>
     <table className='table table-bordered'>
         <thead>
             <tr>
